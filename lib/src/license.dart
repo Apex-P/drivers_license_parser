@@ -209,39 +209,40 @@ class License {
           pdf417 == other.pdf417;
 
   @override
-  int get hashCode =>
-      firstName.hashCode ^
-      lastName.hashCode ^
-      middleName.hashCode ^
-      expirationDate.hashCode ^
-      issueDate.hashCode ^
-      dateOfBirth.hashCode ^
-      gender.hashCode ^
-      eyeColor.hashCode ^
-      height.hashCode ^
-      streetAddress.hashCode ^
-      city.hashCode ^
-      state.hashCode ^
-      postalCode.hashCode ^
-      driversLicenseNumber.hashCode ^
-      customerId.hashCode ^
-      uniqueCustomerId.hashCode ^
-      documentId.hashCode ^
-      country.hashCode ^
-      middleNameTruncation.hashCode ^
-      firstNameTruncation.hashCode ^
-      lastNameTruncation.hashCode ^
-      streetAddressSupplement.hashCode ^
-      hairColor.hashCode ^
-      placeOfBirth.hashCode ^
-      auditInformation.hashCode ^
-      inventoryControlNumber.hashCode ^
-      lastNameAlias.hashCode ^
-      firstNameAlias.hashCode ^
-      suffixAlias.hashCode ^
-      suffix.hashCode ^
-      version.hashCode ^
-      pdf417.hashCode;
+  int get hashCode => Object.hashAll([
+        firstName.hashCode,
+        lastName.hashCode,
+        middleName.hashCode,
+        expirationDate.hashCode,
+        issueDate.hashCode,
+        dateOfBirth.hashCode,
+        gender.hashCode,
+        eyeColor.hashCode,
+        height.hashCode,
+        streetAddress.hashCode,
+        city.hashCode,
+        state.hashCode,
+        postalCode.hashCode,
+        driversLicenseNumber.hashCode,
+        customerId.hashCode,
+        uniqueCustomerId.hashCode,
+        documentId.hashCode,
+        country.hashCode,
+        middleNameTruncation.hashCode,
+        firstNameTruncation.hashCode,
+        lastNameTruncation.hashCode,
+        streetAddressSupplement.hashCode,
+        hairColor.hashCode,
+        placeOfBirth.hashCode,
+        auditInformation.hashCode,
+        inventoryControlNumber.hashCode,
+        lastNameAlias.hashCode,
+        firstNameAlias.hashCode,
+        suffixAlias.hashCode,
+        suffix.hashCode,
+        version.hashCode,
+        pdf417.hashCode
+      ]);
 
   @override
   String toString() {
