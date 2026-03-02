@@ -171,6 +171,79 @@ class License {
   }
 
   @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is License &&
+          runtimeType == other.runtimeType &&
+          firstName == other.firstName &&
+          lastName == other.lastName &&
+          middleName == other.middleName &&
+          expirationDate == other.expirationDate &&
+          issueDate == other.issueDate &&
+          dateOfBirth == other.dateOfBirth &&
+          gender == other.gender &&
+          eyeColor == other.eyeColor &&
+          height == other.height &&
+          streetAddress == other.streetAddress &&
+          city == other.city &&
+          state == other.state &&
+          postalCode == other.postalCode &&
+          driversLicenseNumber == other.driversLicenseNumber &&
+          customerId == other.customerId &&
+          uniqueCustomerId == other.uniqueCustomerId &&
+          documentId == other.documentId &&
+          country == other.country &&
+          middleNameTruncation == other.middleNameTruncation &&
+          firstNameTruncation == other.firstNameTruncation &&
+          lastNameTruncation == other.lastNameTruncation &&
+          streetAddressSupplement == other.streetAddressSupplement &&
+          hairColor == other.hairColor &&
+          placeOfBirth == other.placeOfBirth &&
+          auditInformation == other.auditInformation &&
+          inventoryControlNumber == other.inventoryControlNumber &&
+          lastNameAlias == other.lastNameAlias &&
+          firstNameAlias == other.firstNameAlias &&
+          suffixAlias == other.suffixAlias &&
+          suffix == other.suffix &&
+          version == other.version &&
+          pdf417 == other.pdf417;
+
+  @override
+  int get hashCode =>
+      firstName.hashCode ^
+      lastName.hashCode ^
+      middleName.hashCode ^
+      expirationDate.hashCode ^
+      issueDate.hashCode ^
+      dateOfBirth.hashCode ^
+      gender.hashCode ^
+      eyeColor.hashCode ^
+      height.hashCode ^
+      streetAddress.hashCode ^
+      city.hashCode ^
+      state.hashCode ^
+      postalCode.hashCode ^
+      driversLicenseNumber.hashCode ^
+      customerId.hashCode ^
+      uniqueCustomerId.hashCode ^
+      documentId.hashCode ^
+      country.hashCode ^
+      middleNameTruncation.hashCode ^
+      firstNameTruncation.hashCode ^
+      lastNameTruncation.hashCode ^
+      streetAddressSupplement.hashCode ^
+      hairColor.hashCode ^
+      placeOfBirth.hashCode ^
+      auditInformation.hashCode ^
+      inventoryControlNumber.hashCode ^
+      lastNameAlias.hashCode ^
+      firstNameAlias.hashCode ^
+      suffixAlias.hashCode ^
+      suffix.hashCode ^
+      version.hashCode ^
+      pdf417.hashCode;
+
+  @override
   String toString() {
     return '''
 License{
